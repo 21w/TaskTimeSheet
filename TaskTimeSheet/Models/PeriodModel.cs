@@ -6,20 +6,10 @@ namespace TaskTimeSheet.Models
         private readonly StartDateTime startDateTime;
         private readonly EndDateTime endDateTime;
 
-        public PeriodModel(in StartDateTime startDateTime, in EndDateTime endDateTime)
+        public PeriodModel(in StartDateTime startDateTime)
         {
             this.startDateTime = startDateTime;
-            this.endDateTime = endDateTime;
-        }
-
-        public StartDateTime GetStartDateTime()
-        {
-            return this.startDateTime;
-        }
-
-        public EndDateTime GetEndDateTime()
-        {
-            return this.endDateTime;
+            this.endDateTime = new EndDateTime(new DateTime(9999, 12, 31, 0, 0, 0));
         }
     }
 }
