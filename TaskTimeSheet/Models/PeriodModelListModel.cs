@@ -4,14 +4,17 @@ namespace TaskTimeSheet.Models
     // 期間のリストを表すモデル
     public class PeriodModelListModel
     {
-        private List<PeriodModel> periodModelList;
+        private readonly List<PeriodModel> periodModelList;
 
-        private PeriodModelListModel()
+        public PeriodModelListModel(in StartDateTime startDateTime)
         {
-            if (this.periodModelList == null)
-            {
-                this.periodModelList = new List<PeriodModel>();
-            }
+            // リストの生成
+            periodModelList = new List<PeriodModel>();
+            // 期間の生成
+            PeriodModel newPeriodModel = new PeriodModel(startDateTime);
+
+            // リストに期間を追加
+            periodModelList.Add(newPeriodModel);
         }
 
         public List<PeriodModel> AddPeriodModel(in PeriodModel periodModel)
