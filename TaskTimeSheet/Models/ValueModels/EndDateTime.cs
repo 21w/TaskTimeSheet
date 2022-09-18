@@ -1,5 +1,6 @@
 namespace TaskTimeSheet.Models
 {
+    // 終了時間を表す値モデル
     public class EndDateTime
     {
         private readonly DateTime endDateTime;

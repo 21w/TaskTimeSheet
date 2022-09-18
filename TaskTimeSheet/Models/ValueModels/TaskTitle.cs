@@ -1,5 +1,6 @@
 namespace TaskTimeSheet.Models
 {
+    // タスクのタイトルを表す値モデル
     public class TaskTitle
     {
         private readonly string Title;
