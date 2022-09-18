@@ -10,7 +10,7 @@ namespace TaskTimeSheet.Models
             this.startDateTime = startDateTime;
         }
 
-        public StartDateTime SetStartDateTime(in DateTime startDateTime)
+        public StartDateTime CreateStartDateTime(in DateTime startDateTime)
         {
             return new StartDateTime(startDateTime);
         }

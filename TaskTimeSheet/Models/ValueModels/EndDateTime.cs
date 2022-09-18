@@ -10,7 +10,7 @@ namespace TaskTimeSheet.Models
             this.endDateTime = endDateTime;
         }
 
-        public EndDateTime SetEndDateTime(in DateTime endDateTime)
+        public EndDateTime CreateEndDateTime(in DateTime endDateTime)
         {
             return new EndDateTime(endDateTime);
         }
