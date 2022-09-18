@@ -10,11 +10,6 @@ namespace TaskTimeSheet.Models
             this.Title = Title;
         }
 
-        public TaskTitle CreateTitle(in string Title)
-        {
-            return new TaskTitle(Title);
-        }
-
         public string GetTaskTitle()
         {
             return this.Title;
